@@ -11,7 +11,6 @@ class ActivityDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return MainLayout(
         child: Scaffold(
-          appBar: AppBar(title: Text(activity.title)),
           body: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
