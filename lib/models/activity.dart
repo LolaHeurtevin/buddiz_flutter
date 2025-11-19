@@ -1,10 +1,10 @@
 class Activity {
-  final String id;
+  final int id;
   final String title;
   final String description;
-  final String latitude;
-  final String longitude;
-  final String organizer;
+  final double latitude;
+  final double longitude;
+  final int organizer;
 
   Activity({
     required this.id,

@@ -7,8 +7,12 @@ class CustomNavigationBar extends StatelessWidget {
   const CustomNavigationBar({
     super.key,
     this.bgColor = const Color(0xFFFFEDCD),
-    this.iconColor = const Color(0xFF490715)
+    this.iconColor = const Color(0xFF490715),
   });
+
+  void _navigate(BuildContext context, String route) {
+    Navigator.pushNamed(context, route);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -22,11 +26,41 @@ class CustomNavigationBar extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Icon(Icons.home, color: iconColor, size: 30, semanticLabel: 'Home'),
-            Icon(Icons.list, color: iconColor, size: 30, semanticLabel: 'Activity list'),
-            Icon(Icons.add_circle, color: iconColor, size: 30, semanticLabel: 'Add activity'),
-            Icon(Icons.shopping_basket, color: iconColor, size: 30, semanticLabel: 'Shop'),
-            Icon(Icons.account_circle, color: iconColor, size: 30, semanticLabel: 'Profile'),
+            IconButton(
+              onPressed: () => _navigate(context, "/home"),
+              icon: const Icon(Icons.home),
+              color: iconColor,
+              iconSize: 30,
+              tooltip: 'Home',
+            ),
+            IconButton(
+              onPressed: () => _navigate(context, "/activities-list"),
+              icon: const Icon(Icons.list),
+              color: iconColor,
+              iconSize: 30,
+              tooltip: 'Activity list',
+            ),
+            IconButton(
+              onPressed: () => _navigate(context, "/add-new-activity"),
+              icon: const Icon(Icons.add_circle),
+              color: iconColor,
+              iconSize: 30,
+              tooltip: 'Add activity',
+            ),
+            IconButton(
+              onPressed: () => _navigate(context, "/shop"),
+              icon: const Icon(Icons.shopping_basket),
+              color: iconColor,
+              iconSize: 30,
+              tooltip: 'Shop',
+            ),
+            IconButton(
+              onPressed: () => _navigate(context, "/profile"),
+              icon: const Icon(Icons.account_circle),
+              color: iconColor,
+              iconSize: 30,
+              tooltip: 'Profile',
+            ),
           ],
         ),
       ),
