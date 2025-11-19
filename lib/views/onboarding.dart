@@ -47,13 +47,27 @@ class OnboardingPage extends StatelessWidget {
       onDone: () => _onFinish(context),
       onSkip: () => _onFinish(context),
       showSkipButton: true,
-      skip: const Text('Ignorer'),
-      next: const Icon(Icons.arrow_forward),
-      done: const Text('Commencer', style: TextStyle(fontWeight: FontWeight.w600)),
+      skip: const Text(
+        'Ignorer',
+        style: TextStyle(color: Color(0xFF490715)),
+      ),
+      next: const Icon(
+          Icons.arrow_forward,
+          color: Color(0xFF490715),
+      ),
+      done: const Text(
+        'Commencer',
+        style: TextStyle(
+          fontWeight: FontWeight.w600,
+          color: Color(0xFF490715)
+        )
+      ),
 
       // styles
       dotsDecorator: DotsDecorator(
         size: const Size(6.0, 6.0),
+        color: Color(0xFFFFA6C3),
+        activeColor: Color(0xFF490715),
         activeSize: const Size(22.0, 6.0),
         activeShape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(25.0)),
       ),
