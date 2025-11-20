@@ -2,7 +2,7 @@ import 'package:buddiz/views/widgets/activity_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'widgets/main_layout.dart';
 import '../models/activity.dart';
-import '../services/activity_service.dart';
+import '../controllers/activities_controller.dart';
 
 class ActivitiesListPage extends StatefulWidget {
   static const route = '/activities-list';
@@ -15,13 +15,15 @@ class ActivitiesListPage extends StatefulWidget {
 class _ActivitiesListPage extends State<ActivitiesListPage> {
   // la variable futureactivities sera initialisée plus tard
   late Future<List<Activity>> futureActivities;
+  late ActivitiesController controller;
 
   @override
-  void initState() {
-    // fonction appelée au moment où le widget est inséré dans le widget tree (une seule fois)
+  void initState() { // fonction appelée au moment où le widget est inséré dans le widget tree (une seule fois)
     super.initState();
-    futureActivities = ActivityService().loadActivities();
+    controller = ActivitiesController();
+    futureActivities = controller.getActivities();
   }
+
 
   @override
   Widget build(BuildContext context) {
