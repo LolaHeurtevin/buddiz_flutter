@@ -27,6 +27,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return MainLayout(
+      showAppBar: false,
       child: FutureBuilder<List<Activity>>(
         future: futureActivities,
         builder: (context, snapshot) {
