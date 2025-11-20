@@ -20,7 +20,7 @@ class ActivityDetailPage extends StatelessWidget {
                 const SizedBox(height: 8),
                 Text(activity.description),
                 const SizedBox(height: 8),
-                Text('Organizer: ${activity.organizer}'),
+                Text('Organisateur: ${activity.organizer}'),
               ],
             ),
           ),

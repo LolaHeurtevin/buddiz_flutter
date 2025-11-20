@@ -17,7 +17,8 @@ class _ActivitiesListPage extends State<ActivitiesListPage> {
   late Future<List<Activity>> futureActivities;
 
   @override
-  void initState() { // fonction appelée au moment où le widget est inséré dans le widget tree (une seule fois)
+  void initState() {
+    // fonction appelée au moment où le widget est inséré dans le widget tree (une seule fois)
     super.initState();
     futureActivities = ActivityService().loadActivities();
   }
@@ -25,29 +26,38 @@ class _ActivitiesListPage extends State<ActivitiesListPage> {
   @override
   Widget build(BuildContext context) {
     return MainLayout(
-      child: FutureBuilder<List<Activity>>(
-        future: futureActivities,
-        builder: (context, snapshot) {
-          //Gestion chargement
-          if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(child: CircularProgressIndicator());
-          }
+      child: Column(
+        children: <Widget>[
+          const Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Text(
+              "Toutes les activités",
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+          Expanded(
+            child: FutureBuilder<List<Activity>>(
+              future: futureActivities,
+              builder: (context, snapshot) {
+                if (snapshot.connectionState == ConnectionState.waiting) {
+                  return const Center(child: CircularProgressIndicator());
+                }
+                if (snapshot.hasError) {
+                  return Center(child: Text("Erreur : ${snapshot.error}"));
+                }
 
-          // Gestion erreurs
-          if (snapshot.hasError) {
-            return Center(child: Text("Erreur : ${snapshot.error}"));
-          }
+                final activities = snapshot.data ?? [];
 
-          // Données chargées
-          final activities = snapshot.data ?? [];
-
-          return ListView.builder(
-            itemCount: activities.length,
-            itemBuilder: (context, index) {
-              return ActivityCardWidget(activity: activities[index]);
-            },
-          );
-        },
+                return ListView.builder(
+                  itemCount: activities.length,
+                  itemBuilder: (context, index) {
+                    return ActivityCardWidget(activity: activities[index]);
+                  },
+                );
+              },
+            ),
+          ),
+        ],
       ),
     );
   }

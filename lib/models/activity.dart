@@ -15,6 +15,7 @@ class Activity {
     required this.organizer,
   });
 
+  // retourne un objet Dart à partir d'un fichier json
   factory Activity.fromJson(Map<String, dynamic> json) {
     return Activity(
       id: json['id'],
@@ -24,5 +25,17 @@ class Activity {
       longitude: (json['longitude'] as num).toDouble(),
       organizer: json['organizer'],
     );
+  }
+
+  // retourne un objet Dart en json
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'latitude': latitude,
+      'longitude': longitude,
+      'organizer': organizer,
+    };
   }
 }

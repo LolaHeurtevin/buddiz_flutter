@@ -4,8 +4,9 @@ Buddiz est une application qui permet à des utilisateurs de proposer et partici
 
 ## Fonctionnalités
 - Onboarding
-- Carte interactive
+- Carte interactive affichant les activités
 - Liste des activités
+- Page présentant une activité
 - Formulaire d'ajout d'activité
 
 ## Commandes utiles
