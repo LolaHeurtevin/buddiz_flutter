@@ -14,5 +14,149 @@
     "latitude": 47.2256425,
     "longitude": -1.6310359,
     "organizer": 1
+  },
+  {
+    "id": 3,
+    "title": "Footing du matin",
+    "description": "Course tranquille le long de l’Erdre, tous niveaux bienvenus.",
+    "latitude": 47.236192,
+    "longitude": -1.553921,
+    "organizer": 2
+  },
+  {
+    "id": 4,
+    "title": "Jeux de société",
+    "description": "Soirée jeux au café Le Loki. Venez découvrir de nouveaux jeux !",
+    "latitude": 47.215884,
+    "longitude": -1.552533,
+    "organizer": 3
+  },
+  {
+    "id": 5,
+    "title": "Visite du jardin des plantes",
+    "description": "Balade botanique en groupe.",
+    "latitude": 47.218637,
+    "longitude": -1.540110,
+    "organizer": 1
+  },
+  {
+    "id": 6,
+    "title": "Session Skate",
+    "description": "Skatepark de Nantes, niveau débutant accepté.",
+    "latitude": 47.210811,
+    "longitude": -1.559213,
+    "organizer": 2
+  },
+  {
+    "id": 7,
+    "title": "Cours de cuisine",
+    "description": "Atelier cuisine italienne à Talensac.",
+    "latitude": 47.222312,
+    "longitude": -1.559911,
+    "organizer": 3
+  },
+  {
+    "id": 8,
+    "title": "Sortie cinéma",
+    "description": "Projection de film au Gaumont.",
+    "latitude": 47.216476,
+    "longitude": -1.556043,
+    "organizer": 1
+  },
+  {
+    "id": 9,
+    "title": "Balade nocturne",
+    "description": "Exploration du centre-ville de nuit.",
+    "latitude": 47.214853,
+    "longitude": -1.556759,
+    "organizer": 2
+  },
+  {
+    "id": 10,
+    "title": "Danse improvisée",
+    "description": "Atelier de danse en plein air à l’île de Nantes.",
+    "latitude": 47.206242,
+    "longitude": -1.543299,
+    "organizer": 2
+  },
+  {
+    "id": 11,
+    "title": "Lecture en plein air",
+    "description": "Partage de lectures au parc de Procé.",
+    "latitude": 47.227415,
+    "longitude": -1.579321,
+    "organizer": 1
+  },
+  {
+    "id": 12,
+    "title": "Atelier dessin",
+    "description": "Croquis urbains autour du château.",
+    "latitude": 47.215545,
+    "longitude": -1.548686,
+    "organizer": 3
+  },
+  {
+    "id": 13,
+    "title": "Rencontre café",
+    "description": "Discussion conviviale au café l'Orangerie.",
+    "latitude": 47.218104,
+    "longitude": -1.550764,
+    "organizer": 2
+  },
+  {
+    "id": 14,
+    "title": "Sortie vélo",
+    "description": "Tour en vélo sur l’île de Versailles.",
+    "latitude": 47.224113,
+    "longitude": -1.540892,
+    "organizer": 1
+  },
+  {
+    "id": 15,
+    "title": "Randonnée urbaine",
+    "description": "Découverte de nouveaux quartiers à pied.",
+    "latitude": 47.228422,
+    "longitude": -1.563900,
+    "organizer": 3
+  },
+  {
+    "id": 16,
+    "title": "Tournoi de ping-pong",
+    "description": "Initiation et mini-tournoi au gymnase des Dervallières.",
+    "latitude": 47.233700,
+    "longitude": -1.593221,
+    "organizer": 1
+  },
+  {
+    "id": 17,
+    "title": "Atelier photo",
+    "description": "Prise en main de votre appareil au miroir d’eau.",
+    "latitude": 47.214980,
+    "longitude": -1.549720,
+    "organizer": 2
+  },
+  {
+    "id": 18,
+    "title": "Cours de guitare",
+    "description": "Initiation guitare acoustique, venez essayer !",
+    "latitude": 47.212481,
+    "longitude": -1.553212,
+    "organizer": 2
+  },
+  {
+    "id": 19,
+    "title": "Yoga au parc",
+    "description": "Séance de yoga douce au parc de la Beaujoire.",
+    "latitude": 47.256800,
+    "longitude": -1.528200,
+    "organizer": 3
+  },
+  {
+    "id": 20,
+    "title": "Atelier origami",
+    "description": "Création de petites sculptures en papier.",
+    "latitude": 47.220212,
+    "longitude": -1.553101,
+    "organizer": 1
   }
 ]

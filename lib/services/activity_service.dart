@@ -14,21 +14,21 @@ class ActivityService {
   // Charge la liste des activités
   Future<List<Activity>> loadActivities() async {
     try {
-      File file = await _localFile(); // récupérer les activités du fichier local
-      // Si le fichier n'existe pas encore, on le copie depuis les assets
-      if (!await file.exists()) {
-        final data = await rootBundle.loadString('assets/data/activities.json');
-        await file.writeAsString(data); // on le copie dans le fichier local
-      }
+      File file = await _localFile();
 
-      String contents = await file.readAsString(); // lecturer fichier local
+      final data = await rootBundle.loadString('assets/data/activities.json');
+      await file.writeAsString(data);
+
+      String contents = await file.readAsString();
       final List<dynamic> jsonData = json.decode(contents);
-      return jsonData.map((json) => Activity.fromJson(json)).toList(); // convertir chaque element json en object activity
+      return jsonData.map((json) => Activity.fromJson(json)).toList();
+
     } catch (e) {
       print("Erreur chargement activités: $e");
       return [];
     }
   }
+
 
   // Ajoute une activité
   Future<void> addActivity(Activity activity) async {
