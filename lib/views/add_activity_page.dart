@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'main_layout.dart';
+import 'widgets/main_layout.dart';
 import 'widgets/add_activity_form.dart';
 
 class AddActivityPage extends StatefulWidget {

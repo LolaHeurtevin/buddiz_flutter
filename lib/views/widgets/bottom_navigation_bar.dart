@@ -6,8 +6,8 @@ class CustomNavigationBar extends StatelessWidget {
 
   const CustomNavigationBar({
     super.key,
-    this.bgColor = const Color(0xFFFFEDCD),
-    this.iconColor = const Color(0xFF490715),
+    this.bgColor = const Color(0xFF490715),
+    this.iconColor = const Color(0xFFFFEDCD),
   });
 
   void _navigate(BuildContext context, String route) {

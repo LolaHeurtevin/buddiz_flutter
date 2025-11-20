@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/bottom_navigation_bar.dart';
+import 'bottom_navigation_bar.dart';
 
 class MainLayout extends StatelessWidget {
   final Widget child;
@@ -9,7 +9,9 @@ class MainLayout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: child,
+    body: SafeArea(
+      child: child,
+    ),
       bottomNavigationBar: const CustomNavigationBar(),
     );
   }

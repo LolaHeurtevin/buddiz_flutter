@@ -41,10 +41,16 @@ dependencies:
   latlong2: ^0.9.0
   flutter_native_splash: ^2.4.7
   introduction_screen: ^4.0.0
+  #flutter_launcher_icons: 0.14.4
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+
+#flutter_icons:
+  #android: true
+  #ios: true
+  #image_path: "assets/images/logo/full_name.png"
 
 dev_dependencies:
   flutter_test:
@@ -74,6 +80,7 @@ flutter:
      - assets/images/onboarding/buddy_head.png
      - assets/images/onboarding/buddy_saut.png
      - assets/images/onboarding/map.png
+     - assets/data/activities.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
@@ -140,7 +147,7 @@ flutter_native_splash:
   # remain optional. NOTE that if you specify the [required] color, then you cant
   # use the [required] background_image in the next section. the reverse is true.
   # select one, they cant work together.
-  color: "#FFE8C0CC"  ##====================================[REQUIRED]==========
+  color: "#FFEDCD"  ##====================================[REQUIRED]==========
   #color_dark: "#042a49"
   # platform-specific color. will override general color if active:
   #color_android: "#42a5f5"
@@ -149,6 +156,9 @@ flutter_native_splash:
   #color_dark_ios: "#042a49"
   #color_web: "#42a5f5"
   #color_dark_web: "#042a49"
+
+  android_gravity: fill
+  ios_content_mode: scaleAspectFill
 
   # general background_image for all platform (except android 12+)
   # if you specify this [required] background_image, then you should comment the
@@ -236,8 +246,10 @@ flutter_native_splash:
   #! ANDROID 12+ configuration:
   android_12:
     # background color
-    color: "#FFE8C0CC"
+    color: "#FFEDCD"
     # color_dark: "#042a49"
+
+    android_gravity: fill
 
     # center-logo
     # If this parameter is not specified, the app's launcher icon will be used instead.
@@ -249,7 +261,7 @@ flutter_native_splash:
     # image_dark: assets/images/logo/logo-splash2.png
 
     # center-logo background color
-    icon_background_color: "#111111"
+    icon_background_color: "#3D0514"
     # icon_background_color_dark: "#eeeeee"
 
     # branding:

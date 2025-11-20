@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "Pique nique",
+    "description": "Rendez vous parc de la gaudinière, apportez votre sandwich !",
+    "latitude": 47.2433258,
+    "longitude": -1.5787105,
+    "organizer": 1
+  },
+  {
+    "id": 2,
+    "title": "Bowling",
+    "description": "Au centre commercial.",
+    "latitude": 47.2256425,
+    "longitude": -1.6310359,
+    "organizer": 1
+  }
+]

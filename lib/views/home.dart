@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:flutter_map_marker_cluster/flutter_map_marker_cluster.dart';
 import 'package:latlong2/latlong.dart';
-import 'main_layout.dart';
+import 'widgets/main_layout.dart';
 
 class HomePage extends StatelessWidget {
   static const route = '/home';
@@ -15,13 +15,13 @@ class HomePage extends StatelessWidget {
         point: LatLng(48.8566, 2.3522),
         width: 40,
         height: 40,
-        child: const Icon(Icons.location_on, color: Colors.red, size: 40),
+        child: const Icon(Icons.location_on, color: Color(0xFF490715), size: 40),
       ),
       Marker(
         point: LatLng(48.8606, 2.3376),
         width: 40,
         height: 40,
-        child: const Icon(Icons.location_on, color: Colors.red, size: 40),
+        child: const Icon(Icons.location_on, color: Color(0xFF490715), size: 40),
       ),
     ];
 

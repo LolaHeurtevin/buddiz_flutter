@@ -15,8 +15,14 @@ class Activity {
     required this.organizer,
   });
 
-  @override
-  String toString() {
-    return 'Post(id: $id, title: $title, description: $description, organizer: $organizer)';
+  factory Activity.fromJson(Map<String, dynamic> json) {
+    return Activity(
+      id: json['id'],
+      title: json['title'],
+      description: json['description'],
+      latitude: (json['latitude'] as num).toDouble(),
+      longitude: (json['longitude'] as num).toDouble(),
+      organizer: json['organizer'],
+    );
   }
 }

@@ -1,17 +1,15 @@
 # buddiz
 
-A new Flutter project.
+Buddiz est une application qui permet à des utilisateurs de proposer et participer à des activités près d'eux.
 
-## Getting Started
+## Fonctionnalités
+- Onboarding
+- Carte interactive
+- Liste des activités
+- Formulaire d'ajout d'activité
 
-This project is a starting point for a Flutter application.
+## Commandes utiles
+### Lancer le projet
+flutter run
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# buddiz_flutter" 

@@ -15,7 +15,7 @@ class OnboardingPage extends StatelessWidget {
       titleTextStyle: const TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
       bodyTextStyle: const TextStyle(fontSize: 16.0),
       imagePadding: const EdgeInsets.only(top: 24.0),
-      pageColor: Colors.white,
+      pageColor: Color(0xFFFFEDCD),
     );
 
     return IntroductionScreen(
@@ -75,7 +75,7 @@ class OnboardingPage extends StatelessWidget {
         padding: const EdgeInsets.only(bottom: 16.0),
         child: SizedBox(height: 0),
       ),
-      globalBackgroundColor: Colors.white,
+      globalBackgroundColor: Color(0xFFFFEDCD),
       animationDuration: 300,
     );
   }
